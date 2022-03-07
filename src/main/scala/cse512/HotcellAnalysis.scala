@@ -41,7 +41,6 @@ def runHotcellAnalysis(spark: SparkSession, pointPath: String): DataFrame = {
   val maxZ = 31
   val numCells = (maxX - minX + 1) * (maxY - minY + 1) * (maxZ - minZ + 1)
 
-  // YOU NEED TO CHANGE THIS PART
   // Create a dataframe within min/max boundary of PickupInfo dataframe
   var DF_selected = pickupInfo.where(
       col("x") >= minX and

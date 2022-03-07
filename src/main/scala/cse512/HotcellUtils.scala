@@ -42,8 +42,6 @@ object HotcellUtils {
     return calendar.get(Calendar.DAY_OF_MONTH)
   }
 
-  // YOU NEED TO CHANGE THIS PART
-
   // A Score base on Getis-Ord statistic
   // http://sigspatial2016.sigspatial.org/giscup2016/problem
   def ZScore(x:Int, y:Int, z:Int, numCells: Int, hotCellAverage: Double, StandardDeviation: Double, NumOfadjacentCell: Int, SumNeighborhCell: Int ): Double = {

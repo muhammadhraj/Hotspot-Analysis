@@ -3,8 +3,6 @@ package cse512
 object HotzoneUtils {
 
   def ST_Contains(queryRectangle: String, pointString: String ): Boolean = {
-    // YOU NEED TO CHANGE THIS PART
-    //return true // YOU NEED TO CHANGE THIS PART
     val points = pointString.split(",")
     val pointx = points(0).trim.toDouble
     val pointy = points(1).trim.toDouble
@@ -23,7 +21,4 @@ object HotzoneUtils {
       return false
     }
   }
-
-  // YOU NEED TO CHANGE THIS PART
-
 }
